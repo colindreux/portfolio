@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colin DREUX — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#home">Colin <span>DREUX</span></a>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#experience">Entreprise</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#veille">Veille</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge"><span class="badge-dot"></span> Disponible en alternance</div>
+      <h1 class="hero-title">
+        Bonjour, Je suis <span class="hero-name">Colin</span><br>
+        <span class="hero-role" id="typedRole"></span><span class="cursor">|</span>
+      </h1>
+      <p class="hero-desc">
+        Étudiant en BTS SIO SISR &amp; passionné par l'informatique, je me spécialise dans
+        l'assistance technique, la configuration d'ordinateurs et l'accompagnement des utilisateurs.
+      </p>
+      <div class="hero-actions">
+        <a href="cv.pdf" target="_blank" class="btn-main">
+                    Consulter mon CV
+        </a>
+        <a href="#contact" class="btn-ghost">Me contacter</a>
+      </div>
+          </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-ring ring2"></div>
+      <img src="photo.jpg" alt="Colin DREUX" class="hero-photo">
+      <div class="hero-photo-badge"><span>BTS SIO</span><span class="badge-sub">SISR</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="about">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">À propos</div>
+      <h2>Découvrez mon parcours</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="about-layout">
+      <div class="about-cards">
+        <div class="about-card anim">
+          <div class="about-card-icon">👤</div>
+          <h3>Qui suis-je ?</h3>
+          <p>Je m'appelle <strong>Colin DREUX</strong> et je suis actuellement étudiant en BTS
+          Services Informatiques aux Organisations, option SISR (Systèmes et Réseaux). En complément de ma formation, je travaille comme <strong>technicien support informatique</strong>, ce qui me permet de mettre en pratique mes compétences dans un contexte professionnel.</p>
+        </div>
+        <div class="about-card anim">
+          <div class="about-card-icon">🎯</div>
+          <h3>Mon objectif</h3>
+          <p>Mon objectif est de devenir <strong>technicien support</strong> et d'assurer le bon fonctionnement du matériel et des logiciels au sein d’une organisation. Grâce à mon expérience en alternance, j'ai déjà pu développer des compétences en systèmes et réseaux, ainsi qu'en développement web.</p>
+        </div>
+        <div class="about-card anim">
+          <div class="about-card-icon">🚀</div>
+          <h3>Mes perspectives</h3>
+          <p>Après mon BTS, je prévois d'arrêter mes études et d'entrer dans le <strong>monde du travail</strong> en espérant intégrer mon entreprise dans laquelle je suis actuellement en <strong>apprentissage</strong>.</p>
+        </div>
+      </div>
+      <div class="about-stats anim">
+        <h3 class="stats-title">Niveau de compétences</h3>
+        <div class="stat-row">
+          <div class="stat-label-row"><span>Systèmes et Réseaux</span><span>80%</span></div>
+          <div class="stat-track"><div class="stat-fill" data-w="70%"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label-row"><span>Administration Réseau</span><span>70%</span></div>
+          <div class="stat-track"><div class="stat-fill" data-w="75%"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label-row"><span>Support Technique</span><span>95%</span></div>
+          <div class="stat-track"><div class="stat-fill" data-w="90%"></div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-label-row"><span>Développement</span><span>65%</span></div>
+          <div class="stat-track"><div class="stat-fill" data-w="55%"></div></div>
+        </div>
+        <div class="about-counters">
+          <div class="counter"><div class="counter-val" data-target="2">0</div><div class="counter-lbl">Ans d'alternance</div></div>
+          <div class="counter"><div class="counter-val" data-target="3">0</div><div class="counter-lbl">Projets réalisés</div></div>
+          <div class="counter"><div class="counter-val" data-target="2">0</div><div class="counter-lbl">Certifications</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATION -->
+<section id="formation" class="section-alt">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Parcours</div>
+      <h2>Formation</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="formation-wrap anim">
+      <div class="formation-left">
+        <div class="formation-logo-box">UTEC</div>
+        <div class="formation-info">
+          <h3>UTEC — Île-de-France</h3>
+          <p class="formation-since">Depuis Septembre 2024 · Alternance</p>
+        </div>
+      </div>
+      <div class="formation-right">
+        <div class="formation-bts">
+          <div class="bts-year">2024 – 2026</div>
+          <h4>BTS SIO — Option SISR</h4>
+          <p>Formation complète en alternance axée sur l'administration des systèmes,
+          la gestion des réseaux et la cybersécurité.</p>
+          <div class="bts-tags">
+            <span>Infrastructure</span><span>Réseaux</span><span>Cybersécurité</span>
+            <span>Base de données</span><span>Scripting</span><span>Support</span>
+          </div>
+        </div>
+        <div class="formation-kpis">
+          <div class="kpi-item"><div class="kpi-n">+2000</div><div class="kpi-l">Apprentis</div></div>
+          <div class="kpi-item"><div class="kpi-n">87%</div><div class="kpi-l">Taux réussite</div></div>
+          <div class="kpi-item"><div class="kpi-n">+1500</div><div class="kpi-l">Entreprises partenaires</div></div>
+          <div class="kpi-item"><div class="kpi-n">50+</div><div class="kpi-l">Formations</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREPRISE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Alternance</div>
+      <h2>Entreprise</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="experience-wrap anim">
+      <div class="experience-header">
+        <div style="
+  width: 56px;
+  height: 56px;
+  background-color: #3a6fd8;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+">
+  <img 
+    src="logo.jpg" 
+    alt="AFM" 
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 1px;
+    "
+  />
+</div>
+        <div>
+          <h3>AFM-Téléthon</h3>
+          <p class="exp-since">Evry-Courcouronnes, Île-de-France · Depuis Septembre 2024</p>
+        </div>
+        <span class="exp-badge">ALTERNANCE</span>
+      </div>
+      <p class="exp-desc">L’AFM-Téléthon est une association de militants, malades et parents de malades, concernés par des maladies génétiques, rares, évolutives et lourdement invalidantes, les maladies neuromusculaires. Elle est née d’une conviction et d’une volonté : guérir des maladies longtemps considérées comme incurables. L’AFM-Téléthon, c’est aussi le Téléthon, une mobilisation populaire unique au monde qui a fait sortir les maladies rares du désert scientifique et médical et permis une triple révolution génétique, sociale et médicale. </p>
+      <div class="exp-kpis">
+        <div class="exp-kpi"><div class="exp-kpi-n">25</div><div class="exp-kpi-l">Techniciens support</div></div>
+        <div class="exp-kpi"><div class="exp-kpi-n">500</div><div class="exp-kpi-l">Utilisateurs</div></div>
+        <div class="exp-kpi"><div class="exp-kpi-n">83 504 259 €</div><div class="exp-kpi-l">récoltés pour le Téléthon 2025</div></div>
+        <div class="exp-kpi"><div class="exp-kpi-n">10/10</div><div class="exp-kpi-l">Note de satisfaction</div></div>
+      </div>
+      <div class="exp-role">
+        <h4>Technicien Support IT</h4>
+        <p>Service : Support Technique &amp; Infrastructure</p>
+        <ul class="exp-missions">
+          <li>Assistance utilisateurs niveau 1 et 2</li>
+          <li>Gestion Active Directory et comptes utilisateurs</li>
+          <li>Masterisation de postes de travail</li>
+          <li>Installation de matériels au sein de l'entreprise</li>
+        </ul>
+        <div class="exp-stack">
+          <span>Windows Server</span><span>Active Directory</span><span>Support N1/N2</span>
+          <span>GLPI</span><span>Réseau</span><span>Wallix Bastion</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="skills" class="section-alt">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Expertise</div>
+      <h2>Compétences</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="skills-tabs anim">
+      <button class="stab active" data-tab="reseau">Réseaux &amp; Systèmes</button>
+      <button class="stab" data-tab="cyber">Cybersécurité</button>
+      <button class="stab" data-tab="dev">Développement</button>
+    </div>
+    <div id="stab-reseau" class="skills-panel anim">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-top"><span>Cisco Packet Tracer</span><span>75%</span></div><div class="skill-bar"><div class="skill-prog" data-w="60%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>Active Directory</span><span>80%</span></div><div class="skill-bar"><div class="skill-prog" data-w="90%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>Linux</span><span>85%</span></div><div class="skill-bar"><div class="skill-prog" data-w="70%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>DNS &amp; DHCP</span><span>80%</span></div><div class="skill-bar"><div class="skill-prog" data-w="65%"></div></div></div>
+      </div>
+    </div>
+    <div id="stab-cyber" class="skills-panel anim" style="display:none">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-top"><span>Wireshark</span><span>50%</span></div><div class="skill-bar"><div class="skill-prog" data-w="70%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>TryHackMe</span><span>40%</span></div><div class="skill-bar"><div class="skill-prog" data-w="25%"></div></div></div>
+      </div>
+    </div>
+    <div id="stab-dev" class="skills-panel anim" style="display:none">
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-top"><span>HTML5</span><span>75%</span></div><div class="skill-bar"><div class="skill-prog" data-w="70%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>C++</span><span>70%</span></div><div class="skill-bar"><div class="skill-prog" data-w="50%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>Python</span><span>45%</span></div><div class="skill-bar"><div class="skill-prog" data-w="40%"></div></div></div>
+        <div class="skill-card"><div class="skill-top"><span>VS Code</span><span>80%</span></div><div class="skill-bar"><div class="skill-prog" data-w="70%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Réalisations</div>
+      <h2>Mes Projets</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="proj-filters anim">
+      <button class="pfilt active" data-filter="all">Tous</button>
+      <button class="pfilt" data-filter="ecole">École</button>
+      <button class="pfilt" data-filter="perso">Personnel</button>
+      <button class="pfilt" data-filter="ent">Entreprise</button>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card anim" data-cat="ecole">
+        <div class="proj-header"><span class="proj-cat cat-ecole">École</span></div>
+        <h3>TOIP - VoiceMail</h3>
+        <p>Mise en place d'une messagerie vocale pour un téléphone IP.</p>
+        <div class="proj-tech"><span>Debian</span><span>Asterisk</span><span>Pfsense</span></div>
+        <div class="proj-links"><a href="voicemail.pdf" target="_blank">Voir la documentation</a></div>
+      </div>
+	<div class="proj-card anim" data-cat="ecole">
+        <div class="proj-header"><span class="proj-cat cat-ecole">École</span></div>
+        <h3>Infrastructure réseau virtualisée</h3>
+        <p>Mise en place d’une infrastructure réseau virtualisée.</p>
+        <div class="proj-tech"><span>VMware</span><span>Proxmox</span></div>
+        <div class="proj-links"><a href="infrastructure_reseau_virtualisee.pdf" target="_blank">Voir la documentation</a></div>
+      </div>
+      <div class="proj-card anim" data-cat="perso">
+        <div class="proj-header"><span class="proj-cat cat-perso">Personnel</span></div>
+        <h3>Création d'un site web</h3>
+        <p>Création d'un site web permettant de présenter un projet.</p>
+        <div class="proj-tech"><span>HTML</span><span>CSS</span></div>
+	<div class="proj-links"><a href="site.pdf" target="_blank">Voir la documentation</a></div>
+      </div>
+      <div class="proj-card anim" data-cat="ent">
+        <div class="proj-header"><span class="proj-cat cat-ent">Entreprise</span></div>
+        <h3>Active Directory</h3>
+        <p>Mise en place d'une infrastructure Active Directory.</p>
+        <div class="proj-tech"><span>Windows Server</span><span>VMware</span><span>GPO</span></div>
+	<div class="proj-links"><a href="ad.pdf" target="_blank">Voir la documentation</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section-alt">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Accréditations</div>
+      <h2>Certifications</h2>
+      <div class="section-sep"></div>
+    </div>
+      <div class="cert-card anim">
+        <div class="cert-top"><span class="cert-dot obtained"></span><span class="cert-status-lbl obtained-lbl">Obtenue</span></div>
+        <div class="cert-name">Certification PIX</div>
+        <div class="cert-org">Pix — Compétences Numériques</div>
+        <div class="cert-date">Obtenue en Mars 2024</div>
+        <a href="pix.pdf" target="_blank"class="cert-link">Voir le certificat →</a>
+      </div>
+      <div class="cert-card anim">
+        <div class="cert-top"><span class="cert-dot obtained"></span><span class="cert-status-lbl obtained-lbl">Obtenue</span></div>
+        <div class="cert-name">Certification ANSSI</div>
+        <div class="cert-org">ANSSI - MOOC SecNumacadémie</div>
+        <div class="cert-date">Obtenue en Mars 2024</div>
+        <a href="anssi.pdf" target="_blank"class="cert-link">Voir le certificat →</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VEILLE -->
+<section id="veille">
+  <div class="vt-glow vt-glow-1"></div>
+  <div class="vt-glow vt-glow-2"></div>
+
+  <div class="vt-container">
+
+    <!-- Header -->
+    <p class="vt-eyebrow">Veille Technologique</p>
+    <h2 class="vt-title">Menaces &amp; Sécurisation<br><span>Windows / Active Directory</span></h2>
+    <p class="vt-subtitle">// Surveillance continue des vulnérabilités, attaques et bonnes pratiques défensives</p>
+
+    <!-- Threat level -->
+    <div class="vt-threatbar">
+      <span class="vt-threatbar-label">NIVEAU DE MENACE AD</span>
+      <div class="vt-threatbar-dots">
+        <div class="vt-dot active"></div>
+        <div class="vt-dot active"></div>
+        <div class="vt-dot active"></div>
+        <div class="vt-dot active"></div>
+        <div class="vt-dot"></div>
+      </div>
+      <span>ÉLEVÉ</span>
+      <span class="vt-threatbar-text">Mise à jour : 2025 — Sources : ANSSI · MITRE ATT&CK · Microsoft</span>
+    </div>
+
+    <!-- Cards : menaces principales -->
+    <div class="vt-section-label">// Menaces identifiées</div>
+    <div class="vt-grid">
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">☠</div>
+          <span class="vt-badge vt-badge-crit">Critique</span>
+        </div>
+        <h3 class="vt-card-title">Pass-the-Hash &amp; Pass-the-Ticket</h3>
+        <p class="vt-card-body">Exploitation des hachages NTLM ou des tickets Kerberos volés pour se déplacer latéralement sans connaître le mot de passe en clair. Vecteur privilégié des APT ciblant les grandes infrastructures.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1550</span>
+          <span class="vt-tag">Mimikatz</span>
+          <span class="vt-tag">NTLM</span>
+          <span class="vt-tag">Kerberos</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">⚡</div>
+          <span class="vt-badge vt-badge-crit">Critique</span>
+        </div>
+        <h3 class="vt-card-title">Kerberoasting</h3>
+        <p class="vt-card-body">Un attaquant authentifié demande des tickets de service (TGS) pour des comptes avec SPN, puis les craque hors-ligne. Les comptes de service avec des mots de passe faibles sont particulièrement exposés.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1558.003</span>
+          <span class="vt-tag">SPN</span>
+          <span class="vt-tag">TGS</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">🔑</div>
+          <span class="vt-badge vt-badge-crit">Critique</span>
+        </div>
+        <h3 class="vt-card-title">DCSync Attack</h3>
+        <p class="vt-card-body">Simulation du protocole de réplication AD pour extraire tous les hachages de mots de passe du domaine, y compris krbtgt. Nécessite des droits de réplication (DS-Replication-Get-Changes-All).</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1003.006</span>
+          <span class="vt-tag">Mimikatz</span>
+          <span class="vt-tag">krbtgt</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">👑</div>
+          <span class="vt-badge vt-badge-crit">Critique</span>
+        </div>
+        <h3 class="vt-card-title">Golden Ticket / Silver Ticket</h3>
+        <p class="vt-card-body">Avec le hash du compte krbtgt, un attaquant forge des TGT valides indéfiniment (Golden Ticket). Le Silver Ticket cible un service spécifique. Persistance totale sur le domaine.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1558.001</span>
+          <span class="vt-tag">krbtgt</span>
+          <span class="vt-tag">Forged TGT</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">🕳</div>
+          <span class="vt-badge vt-badge-high">Élevé</span>
+        </div>
+        <h3 class="vt-card-title">PrintNightmare (CVE-2021-34527)</h3>
+        <p class="vt-card-body">Vulnérabilité du spouleur d'impression Windows permettant une élévation de privilèges locale ou une RCE à distance. Toujours exploitée dans des environnements non patchés.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">CVE-2021-34527</span>
+          <span class="vt-tag">Print Spooler</span>
+          <span class="vt-tag">RCE</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">🪲</div>
+          <span class="vt-badge vt-badge-high">Élevé</span>
+        </div>
+        <h3 class="vt-card-title">AS-REP Roasting</h3>
+        <p class="vt-card-body">Ciblage de comptes dont la pré-authentification Kerberos est désactivée. L'attaquant récupère le TGT chiffré sans être authentifié et tente un cassage hors-ligne.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1558.004</span>
+          <span class="vt-tag">Pre-auth</span>
+          <span class="vt-tag">Hashcat</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">🌐</div>
+          <span class="vt-badge vt-badge-high">Élevé</span>
+        </div>
+        <h3 class="vt-card-title">LLMNR / NBT-NS Poisoning</h3>
+        <p class="vt-card-body">Réponse frauduleuse aux requêtes de résolution de noms sur le réseau local pour capturer des hachages NTLMv2, puis les relayer ou les craquer. Outils : Responder, ntlmrelayx.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">MITRE T1557.001</span>
+          <span class="vt-tag">Responder</span>
+          <span class="vt-tag">NTLMv2</span>
+        </div>
+      </div>
+
+      <div class="vt-card">
+        <div class="vt-card-head">
+          <div class="vt-card-icon">📁</div>
+          <span class="vt-badge vt-badge-med">Moyen</span>
+        </div>
+        <h3 class="vt-card-title">Abus des ACL / Délégations</h3>
+        <p class="vt-card-body">Mauvaises configurations des ACL Active Directory, délégations Kerberos non contraintes ou permission WriteOwner/GenericWrite sur des objets privilégiés permettent une élévation vers Domain Admin.</p>
+        <div class="vt-card-tags">
+          <span class="vt-tag">BloodHound</span>
+          <span class="vt-tag">ACL Abuse</span>
+          <span class="vt-tag">Delegation</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Timeline -->
+    <div class="vt-section-label">// Chronologie des incidents notables</div>
+    <div class="vt-timeline">
+      <div class="vt-tline-item">
+        <p class="vt-tline-date">Décembre 2020</p>
+        <p class="vt-tline-title">SolarWinds / Sunburst — Compromission massive via AD</p>
+        <p class="vt-tline-body">Les attaquants ont exploité l'AD Federation Services (ADFS) pour forger des tokens SAML et accéder à des milliers d'environnements cloud. Révélateur des risques de la chaîne d'approvisionnement logicielle.</p>
+      </div>
+      <div class="vt-tline-item">
+        <p class="vt-tline-date">Juillet 2021</p>
+        <p class="vt-tline-title">PrintNightmare — Patch d'urgence Microsoft</p>
+        <p class="vt-tline-body">Exploitation active de CVE-2021-34527 dans des campagnes ransomware. Microsoft publie un correctif d'urgence hors cycle Patch Tuesday, illustrant la criticité du spouleur d'impression.</p>
+      </div>
+      <div class="vt-tline-item">
+        <p class="vt-tline-date">Novembre 2021</p>
+        <p class="vt-tline-title">Active Directory Certificate Services (ESC1–ESC8)</p>
+        <p class="vt-tline-body">Publication de "Certified Pre-Owned" par SpecterOps. Huit vecteurs d'abus des PKI AD permettant de forger des certificats pour une compromission totale du domaine.</p>
+      </div>
+      <div class="vt-tline-item">
+        <p class="vt-tline-date">2023–2025</p>
+        <p class="vt-tline-title">Explosion des attaques par ransomware ciblant l'AD</p>
+        <p class="vt-tline-body">Groupes comme LockBit, BlackCat/ALPHV ou Play ciblent systématiquement les contrôleurs de domaine pour déployer leurs charges utiles à l'échelle du SI. L'ANSSI publie des guides spécifiques de durcissement AD.</p>
+      </div>
+    </div>
+
+    <!-- Outils & Sources -->
+    <div class="vt-section-label">// Ressources &amp; contre-mesures</div>
+    <div class="vt-two-col">
+      <div class="vt-list-panel">
+        <h3>Outils de détection &amp; audit</h3>
+        <ul class="vt-list">
+          <li><strong>BloodHound / SharpHound</strong> — Cartographie des chemins d'attaque AD</li>
+          <li><strong>PingCastle</strong> — Audit automatisé et scoring de la sécurité AD</li>
+          <li><strong>Purple Knight</strong> — Détection des indicateurs de compromission AD</li>
+          <li><strong>Microsoft Defender for Identity</strong> — Détection comportementale sur AD</li>
+          <li><strong>Sysmon + ELK / Splunk</strong> — Centralisation et corrélation des logs Windows</li>
+          <li><strong>LAPS</strong> — Gestion des mots de passe admins locaux</li>
+        </ul>
+      </div>
+      <div class="vt-list-panel">
+        <h3>Sources de veille</h3>
+        <ul class="vt-list">
+          <li><strong>ANSSI</strong> — Guides de durcissement Windows Server / AD (anssi.gouv.fr)</li>
+          <li><strong>MITRE ATT&CK</strong> — Base de techniques d'attaque (attack.mitre.org)</li>
+          <li><strong>SpecterOps Blog</strong> — Recherches offensives AD (posts.specterops.io)</li>
+          <li><strong>Microsoft Security Blog</strong> — Advisories &amp; patches</li>
+          <li><strong>HaveIBeenPwned / NCSC</strong> — Suivi des fuites de données</li>
+          <li><strong>CVE / NVD</strong> — Nouvelles vulnérabilités Windows (nvd.nist.gov)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="vt-footer-note">
+      <span>VEILLE ACTIVE — Mise à jour continue</span>
+      <span>Cadre de référence : <span>ANSSI · MITRE ATT&CK · CIS Benchmark Windows</span></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-alt">
+  <div class="container">
+    <div class="section-head anim">
+      <div class="section-tag">Contact</div>
+      <h2>Contactez-moi</h2>
+      <div class="section-sep"></div>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-left anim">
+        <h3>Restons en contact</h3>
+        <p>N'hésitez pas à me contacter pour toute question ou renseignements.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div><div class="ci-lbl">Email</div><div class="ci-val">colin.dreux@gmail.com</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div><div class="ci-lbl">Localisation</div><div class="ci-val">Maisse, Essonne</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div><div class="ci-lbl">Téléphone</div><div class="ci-val">06 61 39 24 73</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right anim">
+        <div class="form-row">
+          <div class="form-group"><label>Nom complet *</label><input type="text" placeholder="Votre nom"></div>
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="votre@email.com"></div>
+        </div>
+        <div class="form-group"><label>Sujet *</label><input type="text" placeholder="Objet de votre message"></div>
+        <div class="form-group"><label>Message *</label><textarea placeholder="Votre message..."></textarea></div>
+        <button class="btn-send">Envoyer le message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Colin <span>DREUX</span></div>
+      <p>Technicien Support &amp; Étudiant BTS SIO SISR</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2026 Colin DREUX. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+/* Typed effect */
+const roles = ['Technicien Support', 'Étudiant BTS SIO', 'Passionné IT'];
+let ri = 0, ci = 0, del = false;
+const el = document.getElementById('typedRole');
+function type() {
+  const word = roles[ri];
+  if (!del) {
+    el.textContent = word.slice(0, ++ci);
+    if (ci === word.length) { del = true; setTimeout(type, 1800); return; }
+  } else {
+    el.textContent = word.slice(0, --ci);
+    if (ci === 0) { del = false; ri = (ri + 1) % roles.length; }
+  }
+  setTimeout(type, del ? 60 : 90);
+}
+type();
+
+/* Particles */
+const pc = document.getElementById('particles');
+for (let i = 0; i < 35; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*6}s;animation-duration:${4+Math.random()*4}s;width:${1+Math.random()*2}px;height:${1+Math.random()*2}px;opacity:${0.2+Math.random()*0.4}`;
+  pc.appendChild(p);
+}
+
+/* Navbar scroll */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', scrollY > 50);
+});
+
+/* Mobile nav */
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+/* Intersection Observer */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('visible');
+    e.target.querySelectorAll('.stat-fill, .skill-prog').forEach(b => {
+      setTimeout(() => b.style.width = b.dataset.w, 300);
+    });
+    e.target.querySelectorAll('.counter-val').forEach(c => {
+      const target = +c.dataset.target;
+      let n = 0;
+      const step = () => { n = Math.min(n + 1, target); c.textContent = n; if (n < target) setTimeout(step, 120); };
+      step();
+    });
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.anim').forEach(el => io.observe(el));
+
+/* Skills tabs */
+document.querySelectorAll('.stab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.stab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.skills-panel').forEach(p => p.style.display = 'none');
+    const panel = document.getElementById('stab-' + btn.dataset.tab);
+    if (panel) {
+      panel.style.display = 'block';
+      panel.querySelectorAll('.skill-prog').forEach(b => {
+        b.style.width = '0';
+        setTimeout(() => b.style.width = b.dataset.w, 100);
+      });
+    }
+  });
+});
+
+/* Projects filter */
+document.querySelectorAll('.pfilt').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.pfilt').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.proj-card').forEach(c => {
+      c.style.display = (f === 'all' || c.dataset.cat === f) ? '' : 'none';
+    });
+  });
+});
+
+/* CVE loader */
+async function loadCVE() {
+  try {
+    const res = await fetch('https://services.nvd.nist.gov/rest/json/cves/2.0?cvssV3Severity=CRITICAL&resultsPerPage=5');
+    const data = await res.json();
+    const vulns = data.vulnerabilities || [];
+    document.getElementById('cnt-cve').textContent = data.totalResults ? data.totalResults.toLocaleString() : '—';
+    document.getElementById('cnt-failles').textContent = '5 affichées';
+    const list = document.getElementById('cve-list');
+    if (!vulns.length) { list.innerHTML = '<div class="cve-loading">Données indisponibles (rate limit API)</div>'; return; }
+    list.innerHTML = vulns.map(v => {
+      const cve = v.cve;
+      const score = cve.metrics?.cvssMetricV31?.[0]?.cvssData?.baseScore || cve.metrics?.cvssMetricV30?.[0]?.cvssData?.baseScore || '?';
+      const desc = cve.descriptions?.find(d => d.lang === 'en')?.value || '';
+      const col = score >= 9.5 ? '#ff3b3b' : score >= 9 ? '#ff6b35' : '#ff9f1c';
+      return `<div class="cve-item">
+        <div class="cve-score" style="background:${col}">${score}</div>
+        <div class="cve-body"><div class="cve-id">${cve.id}</div><div class="cve-desc">${desc.slice(0,120)}${desc.length>120?'…':''}</div></div>
+        <span class="cve-badge">CRITIQUE</span>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('cve-list').innerHTML = '<div class="cve-loading">Impossible de charger les données CVE.</div>';
+  }
+}
+loadCVE();
+</script>
+</body>
+</html>
