@@ -365,15 +365,9 @@
       </div>
       <span>ÉLEVÉ</span>
       <span id="date-maj"></span>
-		<span class="vt-threatbar-text">Sources : ANSSI · MITRE ATT&CK · Microsoft</span>
+<span class="vt-threatbar-text">Sources : ANSSI · MITRE ATT&CK · Microsoft</span>
     </div>
 
-	  <script>
-  const date = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  document.getElementById('date-maj').textContent = 
-    "Mise à jour : " + date.toLocaleDateString('fr-FR', options);
-</script>
     <!-- Cards : menaces principales -->
     <div class="vt-section-label">// Menaces identifiées</div>
     <div class="vt-grid">
@@ -695,6 +689,13 @@ document.querySelectorAll('.pfilt').forEach(btn => {
   });
 });
 
+	<script>
+  const date = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('date-maj').textContent =
+    "Mise à jour : " + date.toLocaleDateString('fr-FR', options);
+</script>
+	
 /* CVE loader */
 async function loadCVE() {
   try {
