@@ -364,7 +364,15 @@
         <div class="vt-dot"></div>
       </div>
       <span>ÉLEVÉ</span>
-      <span class="vt-threatbar-text">Mise à jour : 2025 — Sources : ANSSI · MITRE ATT&CK · Microsoft</span>
+      <span id="date-maj"></span>
+
+<script>
+  const date = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('date-maj').textContent = 
+    "Mise à jour : " + date.toLocaleDateString('fr-FR', options);
+</script>
+		<span class="vt-threatbar-text">Sources : ANSSI · MITRE ATT&CK · Microsoft</span>
     </div>
 
     <!-- Cards : menaces principales -->
