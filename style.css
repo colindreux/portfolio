@@ -390,6 +390,9 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 3r
 .vt-dot.active { background: #ff6b6b; box-shadow: 0 0 6px #ff6b6b; border-color: #ff6b6b; }
 .vt-threatbar-text { color: var(--text3); margin-left: auto; }
 
+#date-maj {
+  align-self: center;
+}
 /* ── Étiquettes de section ── */
 .vt-section-label {
   font-family: var(--mono);
